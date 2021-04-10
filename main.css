@@ -29,12 +29,159 @@ header {
 
 
 main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
     background-color: #cfcfcd;
     height: 80%;
     margin-left: 10px;
     margin-right: 10px;
     border-radius: 5px;
+    
+/*     
+    max-width: 70%;
+    min-width: 50%;
+   */
+  
 }
+
+
+/* building the tank  */
+
+.container-border {
+
+    /* display: flex; */
+    
+    border-bottom: 13px solid rgb(128, 122, 122);
+     height: 80%;
+    width: 70%;
+   
+    margin: 20px; 
+    /* background-color: white; */
+
+
+    /* positioning */
+    position: relative;
+
+}
+
+.container-border div {
+    box-sizing: border-box;
+}
+
+.tank-closed {
+    background-color:transparent;
+    height: 80%;
+    width: 41%;
+
+    position: absolute;
+    /* border-radius: 3px; */
+    border-left: 20px solid rgb(128, 122, 122);
+    border-right: 20px solid rgb(128, 122, 122);
+    right: 0;
+    bottom: 0;
+
+    z-index: 2;
+}
+
+
+
+
+.tank-open {
+    /* background-color: cornflowerblue; */
+    
+    
+    background-color: cornflowerblue;
+    height: 46%;
+    width: 41%;
+
+    position: absolute;
+  
+    right: 0;
+    bottom: 0;
+
+    z-index: 1;
+}
+
+
+
+
+
+
+
+.pump-stoped {
+   
+    
+    /* background-color: cornflowerblue; */
+    border-radius: 5px;
+    border-right: 15px solid rgb(128, 122, 122);
+    border-left: 15px solid rgb(128, 122, 122);
+
+    height: 80%;
+    width: 15%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: 3;
+  
+}
+
+
+
+.pump-working {
+   
+    
+    background-color: cornflowerblue;
+    border-radius: 5px;
+    
+    
+    height: 70%;
+    width: 15%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: 2;
+  
+}
+
+
+
+
+.pipe {
+    background-color: darkgray;
+
+    height: 4%;
+    width: 100%;
+
+    position: absolute;
+    bottom: 0;
+    z-index: 0;
+    border-top: 10px solid rgb(128, 122, 122);
+    border-bottom: 10px solid rgb(128, 122, 122);
+
+    
+}
+
+
+/* TODO make the pipe-open class activate activated */
+/* display none gets removed */
+
+.pipe-open {
+    /* display: none;  */
+    background-color: cornflowerblue;
+
+    height: 2%;
+    width: 80%;
+
+    position: absolute;
+    bottom: 0;
+    z-index: 10;
+    margin-left: 2%;
+
+}
+
 
 footer {
     color: whitesmoke;
@@ -47,7 +194,11 @@ footer {
     margin-top: 10px;
     margin-left: 20px;
     margin-right: 20px;
+    
+    /* use height in % ?  */
     height: 5%;
+
+    /* rounded corners */
     border-radius: 5px;
 }
 
