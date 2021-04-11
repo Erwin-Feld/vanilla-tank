@@ -11,7 +11,6 @@ body { height: 100%;}
 
 header {
 
-    /* TODO schriftgröße in rem  */
     color: whitesmoke;
     background-color: #29bb89;
     display: flex;
@@ -94,7 +93,7 @@ main {
     
     
     background-color: cornflowerblue;
-    height: 46%;
+    height: 8%;
     width: 41%;
 
     position: absolute;
@@ -137,7 +136,7 @@ main {
     border-radius: 5px;
     
     
-    height: 70%;
+    height: 74%;
     width: 15%;
     position: absolute;
     left: 0;
@@ -150,7 +149,7 @@ main {
 
 
 .pipe {
-    background-color: darkgray;
+    background-color: rgb(128, 122, 122);
 
     height: 4%;
     width: 100%;
@@ -165,25 +164,66 @@ main {
 }
 
 
-/* TODO make the pipe-open class activate activated */
-/* display none gets removed */
 
 .pipe-open {
-    /* display: none;  */
+    display: none; 
     background-color: cornflowerblue;
 
-    height: 2%;
-    width: 80%;
-
+    height: 3%;
+    width: 1%;
     position: absolute;
     bottom: 0;
     z-index: 10;
-    margin-left: 2%;
-
+    margin-left: 3%;
+   
 }
 
 
+/*  add the class */
+
+.open-pipe {
+    display: block;
+    background-color: blueviolet;
+}
+
+
+/* .console {
+    background-color: rgb(99, 86, 94);
+    width: 20%;
+    height: 7%;
+    top: 0;
+    left: 0;
+    border-radius: 5px;
+    position: absolute;
+    
+} */
+
+
+.start {
+    border: none;
+    box-shadow: 0 9px #999;
+    border-radius: 7px;
+    width: 7%;
+    height: 5%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    color: whitesmoke;
+    background-color: #29bb89;
+    outline: none;
+}
+
+
+.start:active {
+    background-color: #29bb89;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+
+}
+
 footer {
+    font-size: 1.2rem;
+    
     color: whitesmoke;
     background-color: #1e6f5c;
     display: flex;
@@ -202,8 +242,3 @@ footer {
     border-radius: 5px;
 }
 
-/* TODO search about rem instead of pixcel  */
-
-/* TODO change font   */
-
-/* question  */
