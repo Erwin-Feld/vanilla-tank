@@ -1,5 +1,5 @@
 # vanilla-tank
 
+with button click water flowes from one tank to the other till balance is reached 
 
- tank water color changes over time - with button click the tank water is "fresh" again 
- pure vanilla features
+for smooth animation use node lite-server or VS Code Live Server Addon  
